@@ -1,17 +1,17 @@
 body { 
 font-family: Arial, sans-serif; 
-background-color: #f0f0f0; 
-color: #333; 
+background-color: #f7f8f7; 
+color: #15d64c; 
 line-height: 1.6; 
 } 
 h1 { 
 color: #005a9c; /* Um azul Django */ 
 } 
 ul { 
-background-color: #fff; 
-border: 1px solid #ddd; 
+background-color: #f4f5f3; 
+border: 1px solid #0c2bdb; 
 padding: 15px; 
 } 
 li { 
 list-style-type: square; 
-} 
+}
