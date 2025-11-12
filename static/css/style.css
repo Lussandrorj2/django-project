@@ -1,11 +1,11 @@
 body { 
 font-family: Arial, sans-serif; 
 background-color: #f7f8f7; 
-color: #15d64c; 
+color: #152bd6; 
 line-height: 1.6; 
 } 
 h1 { 
-color: #005a9c; /* Um azul Django */ 
+color: #00089c; /* Um azul Django */ 
 } 
 ul { 
 background-color: #f4f5f3; 
