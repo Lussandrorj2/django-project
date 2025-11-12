@@ -7,7 +7,7 @@ def home(request):
 # 3. Atualize o contexto 
     context = { 
 
-        'nome_usuario': 'Júnior', 
+        'nome_usuario': 'Lussandro', 
         'tecnologias': ['Python', 'Django', 'Models', 'Admin'], 
         'tarefas': todas_as_tarefas 
 }# 4. Adicione as tarefas ao contexto 
