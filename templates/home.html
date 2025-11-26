@@ -29,32 +29,19 @@
     {% for tarefa in tarefas %}
     <li style="margin-bottom: 15px; border: 1px solid #ccc; padding: 10px;">
 
+        <small style="font-weight: bold; color: #555;">
+            Projeto: {{ tarefa.project.titulo }}
+        </small>
+        <br>
+
         {{ tarefa.titulo }}
 
         {% if tarefa.concluida %}
         <strong style="color: green;">(✓ Concluída)</strong>
         {% else %}
-        <strong style="color: red;">(☐ Pendente)</strong>
+        <strong style="color: orange;">(☐ Pendente)</strong>
         {% endif %}
-
-        <br>
-        <small>Criada em: {{ tarefa.criada_em|date:"d/m/Y H:i" }}</small>
-        <div style="margin-top: 
-10px;">
-
-            <form action="{% url 'deletar_tarefa' tarefa.pk %}" method="POST" style="display: inline;">
-                {% csrf_token %}
-                <button type="submit">Deletar</button>
-            </form>
-
-            {% if not tarefa.concluida %}
-            <form action="{% url 'concluir_tarefa' tarefa.pk %}" method="POST" style="display: 
-inline;">
-                {% csrf_token %}
-                <button type="submit">Marcar como Concluída</button>
-            </form>
-            {% endif %}
-        </div>
+        ... (resto do código dos botões) ...
     </li>
     {% empty %}
     <li>Você ainda não tem tarefas cadastradas.</li>
