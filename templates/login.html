@@ -5,7 +5,7 @@
 {% block content %}
   <h2>Login</h2>
   {% if form.errors %}
-    <p style="color: red;">Seu usuário ou senha estão incorretos. Tente novamente.</p>
+    <p style="color: rgb(88, 32, 32);">Seu usuário ou senha estão incorretos. Tente novamente.</p>
   {% endif %}
   <form method="POST" action="{% url 'login' %}">
     {% csrf_token %}
